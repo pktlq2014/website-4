@@ -1,0 +1,208 @@
+/* body {
+    height: 200rem;
+} */
+* {
+    margin: 0;
+    padding: 0;
+}
+.container1 {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2.2rem 8.2rem;
+    transition: all 0.5s ease-in-out;
+    border-bottom: none !important;
+}
+.navbar ul li a {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    transition: all 0.5s ease-in;
+}
+.navbar ul li a:hover {
+    background-color: none !important;
+    color: deepskyblue !important;
+}
+.icon-bar {
+    color: white !important;
+    background-color: white !important;
+}
+.navbar-toggle {
+    color: white !important;
+    border: 0.1rem solid white !important;
+    transition: all 0.5s ease-in;
+}
+.navbar-toggle:hover {
+    background-color: deepskyblue !important;
+}
+/* |||||||||||||||||||||||||||||||||||| */
+.navbar-inverse .navbar-collapse {
+    border-color: none !important;
+}
+.location {
+    border: 0.1rem solid white;
+    border-radius: 5rem;
+}
+.navbar-inverse {
+    /* transparent: không có background */
+    background-color: transparent !important;
+}
+/* |||||||||||||||||||||||||||||| */
+.slider {
+    width: 100%;
+    height: 70rem;
+    background-image: url(./../img/slider.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slider-overlay {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+}
+.slider-content {
+    width: 100%;
+}
+.icons .fab {
+    font-size: 4rem;
+    color: white;
+    margin-right: 0.7rem;
+}
+.cta-div {
+    margin-top: 3rem;
+    margin-right: -0.1rem;
+}
+.btn1 {
+    padding: 1.3rem 1.8rem;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    border: 0.2rem solid white;
+    /* border-radius góc top+left */
+    border-top-left-radius: 1.5rem;
+    transition: all 0.5s ease-in;
+    margin-right: -0.6rem;
+}
+.btn1:hover {
+    text-decoration: none;
+    color: white;
+    background-color: deepskyblue;
+}
+.btn2 {
+    padding: 1.3rem 1.8rem;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    border: 0.2rem solid white;
+    border-bottom-right-radius: 1.5rem;
+    transition: all 0.5s ease-in;
+    margin-right: 0.1rem;
+}
+.btn2:hover {
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+}
+.social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.social-networks a {
+    border: 0.1rem solid white;
+    padding: 0.1rem;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 2.5rem;
+    margin-right: 0.5rem;
+    transition: all 0.5s ease-in;
+}
+.social-networks a:hover {
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: white;
+}
+.slider .typed, .slider .typed-cursor {
+    display: inline;
+    color: white;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.primary {
+    color: orangered
+}
+/* ||||||||||||||||||||||||||||| */
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite; 
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* |||||||||||||||||||||| */
+.secondary {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2.2rem 8.2rem;
+    background-color: #34495e;
+}
+/* bỏ khoảng trắng left+right hay nói cách khác ép sát các cột lại với nhau (trường hợp dùng boostrap) */
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+.img-wrapper {
+    /* ẩn đi các thuộc tính bị tràn ra khỏi background */
+    overflow: hidden;
+}
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    /* khi hover vào hiện ra icon zoom */
+    cursor: zoom-in;
+}
+.img-wrapper img {
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+/* ||||||||||||||||||||||||||| */
